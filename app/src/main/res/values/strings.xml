@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CynoClient</string>
+    <string name="navigation_drawer_open">Ouvrir le menu de navigation</string>
+    <string name="navigation_drawer_close">Fermer le menu de navigation</string>
+    <string name="nav_header_title">What The Dog</string>
+    <string name="nav_header_subtitle">info@whatthedog.ch</string>
+    <string name="nav_header_desc">Logo What The Dog</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="light_mode">Mode Jour</string>
+    <string name="dark_mode">Mode Nuit</string>
+    <string name="content_description_light_mode">Changer vers le mode jour</string>
+    <string name="content_description_dark_mode">Changer vers le mode nuit</string>
+</resources>

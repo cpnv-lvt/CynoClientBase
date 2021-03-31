@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CynoClient" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/grey200</item>
+        <item name="colorPrimaryVariant">@color/grey900</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey200</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/turquoise</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/blueGrey900</item>
+        <item name="android:navigationBarColor">@color/grey900</item>
+        <!-- text -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/blueGreyDark</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorSecondary">@color/blueGreyDark</item>
+        <item name="android:textColorSecondaryInverse">@color/black</item>
+        <!-- Tint -->
+        <item name="android:tint">@color/blueGreyDark</item>
+    </style>
+
+    <style name="Theme.CynoClient.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CynoClient.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textColorPrimary">@color/blueGreyDark</item>
+        <item name="tint">@color/blueGreyDark</item>
+    </style>
+
+    <style name="Theme.CynoClient.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+</resources>

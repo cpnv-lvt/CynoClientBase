@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dark_mode"
+        android:icon="@drawable/ic_dark_mode"
+        android:title="@string/dark_mode"
+        android:contentDescription="@string/content_description_dark_mode"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/light_mode"
+        android:icon="@drawable/ic_light_mode"
+        android:title="@string/light_mode"
+        android:contentDescription="@string/content_description_light_mode"
+        app:showAsAction="ifRoom" />
+</menu>

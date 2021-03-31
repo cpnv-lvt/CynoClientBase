@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CynoClient" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/anthracite</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/turquoise</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/anthracite</item>
+        <item name="colorSecondaryVariant">@color/grey900</item>
+        <item name="colorOnSecondary">@color/grey200</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/grey200</item>
+        <item name="android:navigationBarColor">@color/anthracite</item>
+        <!-- text -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/grey200</item>
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorSecondaryInverse">@color/grey200</item>
+        <!-- Tint -->
+        <item name="android:tint">@color/grey200</item>
+        <!-- Actions -->
+    </style>
+
+    <style name="Theme.CynoClient.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CynoClient.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textColorPrimary">@color/grey200</item>
+        <item name="tint">@color/grey200</item>
+    </style>
+
+    <style name="Theme.CynoClient.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/anthracite</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/anthracite</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/anthracite</item>
+        <item name="colorSecondaryVariant">@color/grey900</item>
+        <item name="colorOnSecondary">@color/grey200</item>
+    </style>
+</resources>
