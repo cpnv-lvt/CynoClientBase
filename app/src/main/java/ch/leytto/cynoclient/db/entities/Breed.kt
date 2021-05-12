@@ -10,6 +10,7 @@ data class Breed (
     @ColumnInfo(name = "link") val link: String?,
     @ColumnInfo(name = "picture") val picture: String?,
     @ColumnInfo(name = "noun") val noun: String,
+    @ColumnInfo(name = "id_category") val idCategory: Int?,
     @ColumnInfo(name = "morphotype") val morphotype: String?,
     @ColumnInfo(name = "classification") val classification: String?,
     @ColumnInfo(name = "min_size_female") val minimumSizeFemale: Int?,
@@ -20,8 +21,7 @@ data class Breed (
     @ColumnInfo(name = "max_weight_female") val maximumWeightFemale: Int?,
     @ColumnInfo(name = "min_weight_male") val minimumWeightMale: Int?,
     @ColumnInfo(name = "max_weight_male") val maximumWeightMale: Int?,
-    @ColumnInfo(name = "life_expectancy") val lifeExpectancy: Int?,
-    @ColumnInfo(name = "id_category") val idCategory: Int?
+    @ColumnInfo(name = "life_expectancy") val lifeExpectancy: Int?
 ) {
 
 }
