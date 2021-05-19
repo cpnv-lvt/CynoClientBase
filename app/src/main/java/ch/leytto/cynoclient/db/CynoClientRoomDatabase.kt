@@ -16,7 +16,7 @@ abstract class CynoClientRoomDatabase : RoomDatabase() {
 
     // DAOs
     abstract fun dogDao(): DogDao
-    abstract fun ClientDao(): ClientDao
+    abstract fun clientDao(): ClientDao
 
     companion object {
         // Singleton prevents multiple instances of database opening at the

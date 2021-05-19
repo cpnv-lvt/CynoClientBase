@@ -10,7 +10,7 @@ data class Dog (
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id: Int,
     @ColumnInfo(name = "noun") val noun: String,
     @ColumnInfo(name = "female") val female: Boolean,
-    @ColumnInfo(name = "birthdate") val birthdate: Date,
+    @ColumnInfo(name = "birthdate") val birthdate: String,
     @ColumnInfo(name = "sterilized") val sterilized: Boolean,
     @ColumnInfo(name = "chemical") val chemical: Boolean,
     @ColumnInfo(name = "color") val color: String?,

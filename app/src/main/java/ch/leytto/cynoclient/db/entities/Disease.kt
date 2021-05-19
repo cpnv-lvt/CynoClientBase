@@ -9,7 +9,7 @@ data class Disease (
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id: Int,
     @ColumnInfo(name = "noun") val noun: String,
     @ColumnInfo(name = "description") val description: String,
-    @ColumnInfo(name = "symptoms") val symptoms: Boolean,
+    @ColumnInfo(name = "symptoms") val symptoms: String,
     @ColumnInfo(name = "preventive") val preventive: String,
     @ColumnInfo(name = "curative") val curative: String,
     @ColumnInfo(name = "vaccinable") val vaccinable: Boolean,

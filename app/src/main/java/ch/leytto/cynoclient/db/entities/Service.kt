@@ -8,7 +8,7 @@ import java.util.*
 @Entity(tableName = "services")
 data class Service (
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id: Int,
-    @ColumnInfo(name = "moment") val moment: Date,
+    @ColumnInfo(name = "moment") val moment: String,
     @ColumnInfo(name = "duration") val duration: Float,
     @ColumnInfo(name = "type") val type: String,
     @ColumnInfo(name = "description") val description: String?,
