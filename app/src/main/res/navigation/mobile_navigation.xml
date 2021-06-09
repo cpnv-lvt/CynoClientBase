@@ -3,10 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/client_navigation">
+    app:startDestination="@+id/nav_client">
 
-    <include
-        app:graph="@navigation/client_navigation" />
+    <fragment
+        android:id="@+id/nav_client"
+        android:name="ch.leytto.cynoclient.ui.client.ClientFragment"
+        android:label="@string/clientsList"
+        tools:layout="@layout/fragment_client">
+        <action
+            android:id="@+id/action_client_to_clientDetail"
+            app:destination="@id/clientDetail"/>
+    </fragment>
+    <fragment
+        android:id="@+id/clientDetail"
+        android:name="ch.leytto.cynoclient.ui.client.ClientDetailFragment"
+        android:label="@string/clientDetail"
+        tools:layout="@layout/fragment_client_detail">
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+    </fragment>
 
     <fragment
         android:id="@+id/nav_dog"

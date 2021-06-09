@@ -48,17 +48,9 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.clients, R.id.nav_dog, R.id.nav_service), drawerLayout)
+                R.id.nav_client, R.id.nav_dog, R.id.nav_service), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        toolbar.setNavigationOnClickListener {
-            // Handle navigation icon press
-            println(navController.currentDestination?.toString())
-            if (!navController.navigateUp()) {
-                drawerLayout.openDrawer(Gravity.LEFT);
-            }
-        }
 
         toolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {

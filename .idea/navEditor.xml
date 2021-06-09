@@ -51,7 +51,7 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="client_navigation">
+                  <entry key="clientDetail">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -71,6 +71,15 @@
                             <option name="x" value="12" />
                             <option name="y" value="12" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_client_to_clientDetail">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
