@@ -1,9 +1,10 @@
-package ch.leytto.cynoclient.viewmodels
+package ch.leytto.cynoclient.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import ch.leytto.cynoclient.model.AbstractRepository
 import ch.leytto.cynoclient.model.ClientRepository
+import ch.leytto.cynoclient.ui.client.ClientViewModel
 import java.lang.IllegalArgumentException
 
 class ViewModelFactory(private val repository: AbstractRepository) : ViewModelProvider.Factory {

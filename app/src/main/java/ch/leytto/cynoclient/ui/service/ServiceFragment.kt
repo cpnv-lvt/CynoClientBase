@@ -1,4 +1,4 @@
-package ch.leytto.cynoclient.ui.gallery
+package ch.leytto.cynoclient.ui.service
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import ch.leytto.cynoclient.R
 
-class GalleryFragment : Fragment() {
+class ServiceFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var serviceViewModel: ServiceViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-                ViewModelProvider(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        serviceViewModel =
+                ViewModelProvider(this).get(ServiceViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_service, container, false)
+        val textView: TextView = root.findViewById(R.id.text_service)
+        serviceViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

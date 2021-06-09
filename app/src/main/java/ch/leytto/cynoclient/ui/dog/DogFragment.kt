@@ -1,4 +1,4 @@
-package ch.leytto.cynoclient.ui.slideshow
+package ch.leytto.cynoclient.ui.dog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import ch.leytto.cynoclient.R
 
-class SlideshowFragment : Fragment() {
+class DogFragment : Fragment() {
 
-    private lateinit var slideshowViewModel: SlideshowViewModel
+    private lateinit var dogViewModel: DogViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        slideshowViewModel =
-                ViewModelProvider(this).get(SlideshowViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
-        val textView: TextView = root.findViewById(R.id.text_slideshow)
-        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
+        dogViewModel =
+                ViewModelProvider(this).get(DogViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_dog, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dog)
+        dogViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

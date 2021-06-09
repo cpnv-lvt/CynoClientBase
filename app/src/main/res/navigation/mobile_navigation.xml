@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/client_navigation">
+
+    <include
+        app:graph="@navigation/client_navigation" />
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="ch.leytto.cynoclient.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_dog"
+        android:name="ch.leytto.cynoclient.ui.dog.DogFragment"
+        android:label="@string/menu_dogs"
+        tools:layout="@layout/fragment_dog" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="ch.leytto.cynoclient.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="ch.leytto.cynoclient.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_service"
+        android:name="ch.leytto.cynoclient.ui.service.ServiceFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_service" />
 </navigation>

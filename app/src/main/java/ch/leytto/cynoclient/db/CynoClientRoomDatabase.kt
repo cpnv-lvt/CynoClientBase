@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 
 // Annotates class to be a Room Database with a table (entity) of the Word class
 @Database(entities = arrayOf(Breed::class, Category::class, Client::class, ClientTakeService::class, Consultation::class, Disease::class, Dog::class, DogHaveDisease::class, DogHaveService::class, Locality::class, Service::class), version = 1, exportSchema = false)
-@TypeConverters(DateConverter::class)
+@TypeConverters(TypeConverter::class)
 abstract class CynoClientRoomDatabase : RoomDatabase() {
 
     // DAOs

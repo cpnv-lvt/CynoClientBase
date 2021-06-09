@@ -7,9 +7,11 @@
     <string name="nav_header_desc">Logo What The Dog</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_clients">Clients</string>
+    <string name="menu_dogs">Chiens</string>
+    <string name="menu_services">Services</string>
+    <string name="clientsList">Liste des clients</string>
+    <string name="clientDetail">Détails du client</string>
     <string name="light_mode">Mode Jour</string>
     <string name="dark_mode">Mode Nuit</string>
     <string name="content_description_light_mode">Changer vers le mode jour</string>
