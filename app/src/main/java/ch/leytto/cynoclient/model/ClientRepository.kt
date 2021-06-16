@@ -6,6 +6,7 @@ import ch.leytto.cynoclient.db.dao.DogDao
 import ch.leytto.cynoclient.db.entities.Client
 import ch.leytto.cynoclient.db.entities.Dog
 import ch.leytto.cynoclient.db.entities.relations.ClientWithLocality
+import ch.leytto.cynoclient.db.entities.relations.ClientWithLocalityAndDogWithBreedAndDiseases
 import kotlinx.coroutines.flow.Flow
 
 class ClientRepository(private val clientDao: ClientDao) : AbstractRepository() {
@@ -23,5 +24,10 @@ class ClientRepository(private val clientDao: ClientDao) : AbstractRepository() 
     @WorkerThread
     suspend fun insert(client: Client) {
         clientDao.insert(client)
+    }
+
+    @WorkerThread
+    suspend fun findClientWithLocalityAndDogWithBreedAndDiseasesById(id: Int): ClientWithLocalityAndDogWithBreedAndDiseases {
+        return clientDao.findClientWithLocalityAndDogWithBreedAndDiseasesById(id)
     }
 }

@@ -13,6 +13,10 @@ interface ClientDao {
     @Query("SELECT * FROM clients")
     suspend fun getClientWithLocalityAndDogWithBreedAndDiseases(): List<ClientWithLocalityAndDogWithBreedAndDiseases>
 
+    @Transaction
+    @Query("SELECT * FROM clients WHERE id = :id")
+    suspend fun findClientWithLocalityAndDogWithBreedAndDiseasesById(id: Int): ClientWithLocalityAndDogWithBreedAndDiseases
+
     @Query("SELECT * FROM clients")
     fun getClients() : Flow<List<Client>>
 
